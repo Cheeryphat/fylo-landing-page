@@ -1,0 +1,340 @@
+@import url('https://fonts.google.com/specimen/Raleway');
+@import url('https://fonts.google.com/specimen/Open+Sans');
+
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --VeryDarkBlue-p: hsl(243, 87%, 12%);
+    --DesaturatedBlue-p: hsl(238, 22%, 44%);
+    --BrightBlue-a: hsl(224, 93%, 58%);
+    --ModerateCyan-a: hsl(170, 45%, 43%);
+    --LightGrayishBlue-n: hsl(240, 75%, 98%);
+    --LightGray-n: rgb(191, 191, 191);
+    --Fontsize_paragraph: 16px;
+
+
+}
+
+body {
+    font-size: var(--Fontsize_paragraph);
+
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    padding: auto;
+    /* overflow-y: hidden; */
+}
+
+header nav {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    cursor: pointer;
+
+    padding: 3rem;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+}
+
+header ul a {
+    color: var(--VeryDarkBlue-p);
+    text-decoration: none;
+}
+
+/* hero section1 */
+.hero_section {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 1rem 0;
+    padding: 4rem;
+
+}
+
+.hero_section div.hero_description {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+
+}
+
+.hero_section div.hero_description h1 {
+    width: 62%;
+    font-weight: 700;
+    margin: 0 0 2rem;
+
+}
+
+.hero_section div.hero_description p {
+    width: 62%;
+    font-size: var(--Fontsize_paragraph);
+    font-weight: 400;
+    margin: 0 0 2rem;
+}
+
+.hero_section div form {
+    gap: 20px;
+
+}
+
+.hero_section div form input {
+    width: 18em;
+    height: 2rem;
+}
+
+.hero_section .hero_img {
+    display: flex;
+    justify-content: center;
+}
+
+.hero_section .hero_img img {
+    width: 60%;
+
+}
+
+.hero_section div form button {
+    color: var(--LightGrayishBlue-n);
+    background-color: var(--BrightBlue-a);
+    width: 12em;
+    height: 2rem;
+    border: none;
+    border-radius: 2px;
+    margin: 0 0 0 5px;
+    box-shadow: 1px 1px 1px 0px var(--LightGrayishBlue-n);
+    cursor: pointer;
+}
+
+.hero_section div form button:hover {
+    box-shadow: 2px 2px 2px 2px var(--LightGrayishBlue-n);
+    background-color: var(--DesaturatedBlue-p);
+}
+
+/* hero section 2 */
+.hero_section2 {
+    width: 100%;
+    margin-top: 5rem;
+    padding-top: 5rem;
+    background: url("../images/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    background-blend-mode: color-burn;
+}
+
+.hero_section2 .hero_section2_wrapper {
+    width: 100%;
+    background-color: #fbfbfb;
+}
+
+.hero_section2_wrapper .hero_description h1 {
+    width: 65%;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 0 2rem;
+}
+
+.hero_section2_wrapper .hero_description p {
+    width: 62%;
+    margin: 0 0 1rem;
+}
+
+.hero_section2_wrapper .hero_description a {
+    text-decoration: underline;
+    color: var(--ModerateCyan-a);
+}
+
+.hero_section2_wrapper .card {
+    width: 50%;
+    /* height: 35vh; */
+    background-color: #fbfbfb;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 6px 6px 6px var(--LightGrayishBlue-n);
+
+}
+
+.hero_section2_wrapper .card img {
+
+    margin-bottom: 1rem;
+}
+
+.hero_section2_wrapper .hero_description .card p {
+    background-color: aquamarine;
+    width: 100%;
+
+    font-size: 1rem;
+}
+
+.hero_section2_wrapper .card .fylo_founder {
+    font-size: 0.5rem;
+    display: flex;
+    gap: 4px;
+}
+
+.hero_section2_wrapper .card .fylo_founder img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.hero_section2_wrapper .card .fylo_founder .details {
+    margin: 3px 0;
+
+}
+
+.hero_section2_wrapper .hero_section2_img {
+    width: 60%;
+}
+
+
+/* Newsletter start */
+#newsletter {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    background-color: var(--DesaturatedBlue-p);
+}
+
+#newsletter .left {
+    width: 50%;
+    color: var(--LightGrayishBlue-n);
+
+}
+
+#newsletter .left h1 {
+    font-weight: 700;
+}
+
+#newsletter .right form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#newsletter .right form input {
+    width: 18em;
+    height: 2rem;
+
+}
+
+#newsletter .right form button {
+    color: var(--LightGrayishBlue-n);
+    background-color: var(--BrightBlue-a);
+    width: 12em;
+    height: 2rem;
+    border: none;
+    border-radius: 2px;
+    margin: 0 0 0 5px;
+    box-shadow: 1px 1px 1px var(--LightGrayishBlue-n);
+    cursor: pointer;
+}
+
+#newsletter .right form button:hover {
+    box-shadow: 2px 2px 2px 2px var(--LightGrayishBlue-n);
+    background-color: var(--DesaturatedBlue-p);
+}
+
+/* footer Section start */
+
+#footer_wrapper {
+    color: var(--LightGrayishBlue-n);
+    background-color: var(--VeryDarkBlue-p);
+    padding: 4rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer_left img {
+    margin-right: 20px;
+}
+
+.footer_left .phone,
+.email {
+    margin: 1rem;
+}
+
+.footer_middle {
+    color: var(--LightGrayishBlue-n);
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.footer_middle ul li {
+    margin: 1rem;
+    list-style: none;
+}
+
+.footer_middle ul a {
+    color: var(--LightGrayishBlue-n);
+    text-decoration: none;
+}
+
+.footer_middle ul a:hover {
+    color: var(--DesaturatedBlue-p);
+
+}
+.footer_rightIcons {
+    display: flex;
+    align-items: center;
+}
+
+.footer_rightIcons .fa {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+
+    margin: 5px 4px;
+    border-radius: 50%;
+}
+
+.footer_rightIcons .fa:hover {
+    color: var(--DesaturatedBlue-p);
+    opacity: 0.7;
+}
+
+.footer_rightIcons .fa-facebook {
+    border: 1px solid var(--LightGray-n);
+    background: none;
+    color: white;
+}
+
+.footer_rightIcons .fa-twitter {
+    border: 1px solid var(--LightGray-n);
+    background: none;
+    color: white;
+}
+
+.footer_rightIcons .fa-instagram {
+    border: 1px solid var(--LightGray-n);
+    background: none;
+    color: white;
+}
